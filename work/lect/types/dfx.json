@@ -1,0 +1,13 @@
+{
+    "canisters": {
+        "types": {
+            "type": "custom",
+            "main": "src/index.ts",
+            "candid": "src/index.did",
+            "build": "npx azle types",
+            "wasm": ".azle/types/types.wasm",
+            "gzip": true
+        }
+    }
+}
+
