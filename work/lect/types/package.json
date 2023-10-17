@@ -9,7 +9,13 @@
         "canister_call_get_message": "dfx canister call types getMessage",
         "canister_call_set_message": "dfx canister call types setMessage '(\"Hello world!\")'",
         "get_blob": "dfx canister call types getBlob",
-        "get_bool": "dfx canister call types getBool"
+        "get_bool": "dfx canister call types getBool",
+        "get_empty": "dfx canister call types getEmpty",
+        "get_float32": "dfx canister call types getFloat32",
+        "get_float64": "dfx canister call types getFloat64",
+        "get_basicFunc": "dfx canister call types getBasicFunc",
+        "get_int": "dfx canister call types getInt",
+        "get_int64": "dfx canister call types getInt64"
     },
     "dependencies": {
         "azle": "0.18.4"
