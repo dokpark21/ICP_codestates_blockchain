@@ -15,7 +15,13 @@
         "get_float64": "dfx canister call types getFloat64",
         "get_basicFunc": "dfx canister call types getBasicFunc",
         "get_int": "dfx canister call types getInt",
-        "get_int64": "dfx canister call types getInt64"
+        "get_int64": "dfx canister call types getInt64",
+        "get_principal": "dfx canister call types getPrincipal",
+        "get_reserved": "dfx canister call types getReserved",
+        "get_service": "dfx canister call types getService",
+        "call_service": "dfx canister call types callService",
+        "get_balance" : "dfx canister call types canisterBalance",
+        "get_id": "dfx canister call types id"
     },
     "dependencies": {
         "azle": "0.18.4"

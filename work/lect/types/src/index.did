@@ -1,11 +1,8 @@
 service: () -> {
-    getBasicFunc: () -> (func (text) -> (text) query) query;
-    getBlob: () -> (vec nat8) query;
-    getBool: () -> (bool) query;
-    getEmpty: () -> (empty) query;
-    getFloat32: () -> (float32) query;
-    getFloat64: () -> (float64) query;
-    getInt: () -> (int) query;
-    getInt64: () -> (int64) query;
-    printBlob: (vec nat8) -> (vec nat8) query;
+    canisterList: (vec service {query1: () -> (bool) query; update1: () -> (text);}) -> (vec service {query1: () -> (bool) query; update1: () -> (text);});
+    canisterNestedReturnType: () -> (record {sub:service {query1: () -> (bool) query; update1: () -> (text);}});
+    canisterParam: (service {query1: () -> (bool) query; update1: () -> (text);}) -> (service {query1: () -> (bool) query; update1: () -> (text);}) query;
+    canisterReturnType: () -> (service {query1: () -> (bool) query; update1: () -> (text);}) query;
+    crossQuery: (service {query1: () -> (bool) query; update1: () -> (text);}) -> (bool) query;
+    crossUpdate: (service {query1: () -> (bool) query; update1: () -> (text);}) -> (text);
 }
